@@ -53,7 +53,7 @@ def extract_pdf(pdf_bytes: bytes, filename: str, tesseract_cmd: str | None = Non
                     ocr_error = ""
             else:
                 ocr_error = ""
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=False)
+            pix = page.get_pixmap(matrix=pymupdf.Matrix(2, 2), alpha=False)
             pages.append({
                 "page_number": idx + 1,
                 "text": text.strip(),

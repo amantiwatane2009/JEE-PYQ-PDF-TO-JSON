@@ -2,6 +2,7 @@ name: Converter tests
 on:
   push:
     branches:
+      - main
       - feature/pdf-to-json-converter
     paths:
       - "converter/**"
