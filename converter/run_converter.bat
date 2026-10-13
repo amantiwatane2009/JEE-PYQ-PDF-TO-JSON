@@ -1,7 +1,6 @@
 @echo off
 setlocal
 cd /d "%~dp0"
-cd converter
 if not exist ".venv\Scripts\python.exe" (
   echo Creating local Python environment...
   py -3 -m venv .venv
